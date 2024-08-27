@@ -1,0 +1,90 @@
+.profile {
+  padding: 0;
+  margin: 0 5px 45px 5px;
+  flex: 31%;
+  max-width: 31%;
+  text-align: left;
+  /* background-color: #e5e5e5; */
+  overflow: hidden;
+  position: relative;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.profile.hidden {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.profile:hover {
+  transform: scale(1.04);
+  transition: all 400ms ease;
+}
+
+.profile-images img {
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+
+.details-container {
+  position: absolute;
+  padding: 10px 10px 25px 10px;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+  color: white;
+  margin-bottom: 3px;
+}
+
+.details {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.location {
+  color: white;
+}
+
+.details a {
+  padding: 5px 7px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.location,
+.location-icon {
+  background-color: #e63946;
+  color: white;
+  font-size: 12px;
+}
+
+a:visited {
+  color: black;
+}
+
+.details .price a {
+  background-color: #e63946;
+  font-size: 12px;
+  padding: 5px 7px;
+  border-radius: 8px;
+  color: white;
+}
+
+.details .order.price a:visited {
+  color: white;
+  transition: all 400ms ease;
+}
+
+.details .order.price a:hover {
+  background-color: white;
+  color: #e63946;
+  transition: all 400ms ease;
+}

@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+.logo {
+  color: darkred;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 20px 0 0;
+}
+
+.fa-user {
+  font-size: 10px;
+}
+
+.top-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-bottom: solid white 5px;
+}
+
+.add {
+  background-color: #222;
+  background-image: url("https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?t=st=1722984843~exp=1722988443~hmac=31e19bf4d883250def98c0ae4dc01154c2641721b2983e2dc3cda92d9007b493&w=996");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100%;
+}
+
+.main-container {
+  background-color: white;
+  padding: 40px;
+}
+
+form,
+#main-search {
+  background-color: #f1f3f5;
+  color: #222;
+  padding: 15px 15px;
+  width: 50%;
+  border-style: solid 1px #eaeaea;
+  border-radius: 20px;
+}
+
+#main-search {
+  width: 100%;
+}
+
+#main-search:active {
+  border-style: none;
+}
+
+.active {
+  background-color: darkred;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: 0 0 0 10px;
+}
+
+li {
+  display: inline;
+  padding: 7px 12px;
+  margin: 0 10px;
+}
+
+li:hover {
+  background-color: darkred;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+nav {
+  background-color: #f1f3f5;
+  padding: 0 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main-body {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.inner-container {
+  text-align: center;
+  padding: 0 35px;
+  margin: 30px 0;
+  width: 70%;
+}
+
+.map {
+  width: 30%;
+  position: fixed;
+  top: 180 px;
+  right: 0;
+}
+
+.user {
+  margin: 0 30px;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: darkred;
+}
+
+.profiles {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 40px;
+}
